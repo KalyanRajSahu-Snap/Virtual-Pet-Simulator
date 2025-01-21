@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pet Simulator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <h1>Virtual Pet Simulator</h1>
+        <div id="userGreeting"></div>
+    </nav>
+    <div class="container">
+        <div id="petSelection">
+            <h2>Choose Your Pets (Max 3)</h2>
+            <div id="petOptions"></div>
+            <button onclick="startSimulation()">Start Simulation</button>
+        </div>
+        <div id="petSimulator" style="display: none;">
+            <div id="globalActions">
+                <button onclick="feedAllPets()">Feed All</button>
+                <button onclick="playWithAllPets()">Play With All</button>
+                <button onclick="toggleSleepAllPets()">Toggle Sleep All</button>
+            </div>
+            <div id="pets"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
